@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: rgba(115, 38, 38, 0.98);
+            color: white;
+        }
+        #surname{
+            padding: 10px 0 100px 100px;
+            margin: 100px;
+            border-bottom-color: black !important;
+            border-bottom-color: red !important;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="name">ahmet</div>
+<div id="surname"></div>
+<div id="nameSurname"></div>
+<script>
+    f();
+
+    function f() {
+        const name = 'net';
+        const surname = 'adım';
+        let nameSurname = '';
+        document.getElementById('name').innerText = '<strong>' + name + '</strong>';
+        document.getElementById('surname').innerHTML = surname;
+
+        nameSurname = name + ' ' + surname;
+        document.getElementById('nameSurname').innerHTML = nameSurname;
+    }
+</script>
+</body>
+</html>
